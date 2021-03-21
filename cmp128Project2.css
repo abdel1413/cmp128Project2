@@ -142,7 +142,7 @@ h1 {
     background: #2f4372;
   }
 
-  /* copied from sample  */
+  /* Refered to sample  */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -154,7 +154,7 @@ h1 {
   }
   
   /* this part resize the pic to fit the grid */
-  /* copied from sample */
+  /* Referred to sample */
   @media (max-width: 30.625em) {
     .projects-section {
       padding: 6rem 1rem;
@@ -243,6 +243,7 @@ h1 {
         transition: transform 0.3s ease-out;
       }
       
+      /* Referred to project sample */
       .contact-details:hover {
         transform: translateY(8px);
       }
