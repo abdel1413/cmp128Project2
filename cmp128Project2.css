@@ -1,25 +1,31 @@
 
+
+/* created by aboulaye Tchakoura
+   on 03/18/21 */
 * {
     margin: 0;
     padding: 0;
   }
 
-  *,
-*::before,
+  *,*::before,
 *::after {
   box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
+/* copied from project */
+ html { 
+    box-sizing: border-box; 
   
     /* Set font size for easy rem calculations
      * default document font size = 16px, 1rem = 16px, 100% = 16px
      * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
     */
+
+    
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
+  
 
 
   /* 1200px / 16px = 75em */
@@ -70,9 +76,11 @@ nav{
 
    .links{
        text-align: center;
-       /* margin:  1rem; */
+       
        margin: 20px;
    }
+
+
    a{
        text-decoration: none;
        color:#f0f0f0;
@@ -104,6 +112,7 @@ h1 {
     height: 100vh;
     background-color: #000;
     background-image: linear-gradient(62deg, #3a3d40 0%, #7a40b4 100%);
+   
   }
 
   .introduction > p {
@@ -133,7 +142,7 @@ h1 {
     background: #2f4372;
   }
 
-
+  /* copied from sample  */
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -144,7 +153,8 @@ h1 {
     margin-bottom: 6rem;
   }
   
-  /* this part resixe the pic to fit the grid */
+  /* this part resize the pic to fit the grid */
+  /* copied from sample */
   @media (max-width: 30.625em) {
     .projects-section {
       padding: 6rem 1rem;
@@ -161,12 +171,12 @@ h1 {
     border-radius: 2px;
   }
   
-  .code {
+  .projectScript{
     color: #202831;
     transition: color 0.3s ease-out;
   }
   
-  .project:hover .code {
+  .project:hover .projectScript {
     color: #ff7f50;
    
   }
@@ -177,11 +187,7 @@ h1 {
     object-fit: cover;
   }
   
-  /* .project-title {
-    font-size: 2rem;
-    padding: 2rem 0.5rem;
-  } */
-
+  
   .contactSection{
     display: flex;
     flex-direction: column;
